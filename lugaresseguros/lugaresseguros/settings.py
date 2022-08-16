@@ -86,7 +86,7 @@ WSGI_APPLICATION = 'lugaresseguros.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'd1t2s8biq53cko', #nombre de la base de datos que viene en heroku
         'USER': 'fvzgknnfefuldl', #usuario que viene en heroku
         'HOST': 'ec2-54-85-56-210.compute-1.amazonaws.com', #de heroku
