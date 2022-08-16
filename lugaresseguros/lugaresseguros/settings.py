@@ -77,13 +77,23 @@ WSGI_APPLICATION = 'lugaresseguros.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'd1t2s8biq53cko', #nombre de la base de datos que viene en heroku
+        'USER': 'fvzgknnfefuldl', #usuario que viene en heroku
+        'HOST': 'ec2-54-85-56-210.compute-1.amazonaws.com', #de heroku
+        'PASSWORD': 'ec2-54-85-56-210.compute-1.amazonaws.com',
+        'PORT': 5432
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
